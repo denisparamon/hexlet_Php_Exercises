@@ -1,5 +1,4 @@
 <?php
-
 const ONE = 998;
 const TWO = 1966;
 
