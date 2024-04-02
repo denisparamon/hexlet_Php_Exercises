@@ -96,8 +96,6 @@
 //
 //print_r($result);
 
-<?php
-
 // //Решение через использование функции strpos:
 
 // function normalizeUrl($url, $defUrl = 'http://', $defUrlTwo = 'https://')
