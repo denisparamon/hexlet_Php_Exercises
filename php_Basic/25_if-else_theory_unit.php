@@ -96,12 +96,14 @@
 //
 //print_r($result);
 
-// //Решение через использование функции strpos:
+namespace App\Solution;
+// //Решение через использование функции strpos
 
 // function normalizeUrl($url, $defUrl = 'http://', $defUrlTwo = 'https://')
 // {
 //     $pos = strpos($url, $defUrl);
 //     $pos2 = strpos($url, $defUrlTwo);
+
 //     if ($pos === 0) {
 //         $position = 4;
 //         $symbol = 's';
@@ -113,11 +115,13 @@
 //         return 'https://' . $url;
 //     }
 // }
+
 // // $result = normalizeUrl('lohpidr.com');
 // // $result = normalizeUrl('http://lohpidr.com');
 // // print_r($result);
 
 // Решение первым вариантом, сравнение первых символов в адресной строке
+
 function normalizeUrl($url, $defUrl = 'http://', $defUrlTwo = 'https://')
 {
     if (strncmp($url, $defUrl, 7) === 0) {
@@ -125,7 +129,7 @@ function normalizeUrl($url, $defUrl = 'http://', $defUrlTwo = 'https://')
         $symbol = 's';
         $urls = substr_replace($url, $symbol, $position, 0);
         return $urls;
-    } elseif (strncmp($url, $defUrl, 8) === 0) {
+    } elseif (strncmp($url, $defUrlTwo, 8) === 0) {
         return $url;
     } else {
         return 'https://' . $url;
