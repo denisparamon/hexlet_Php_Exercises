@@ -1,15 +1,24 @@
 <?php
-const ONE = 998;
-const TWO = 1966;
+// const ONE = 998;
+// const TWO = 1966;
+// function getAgeDifference()
+// {
+//     $difference = ONE - TWO;
+//     $end = "The age difference is " . abs($difference);
+//     return $end;
+// }
+// // $result = getAgeDifference();
+// // print_r($result);
 
-function getAgeDifference()
-
+function getAgeDifference($one, $two)
 {
-    $difference = ONE - TWO;
+    $difference = $one - $two;
     $end = "The age difference is " . abs($difference);
     return $end;
-
 }
 
-$result = getAgeDifference();
+$one = 998;
+$two = 1966;
+
+$result = getAgeDifference($one, $two);
 print_r($result);
