@@ -1,30 +1,14 @@
 <?php
 
-//$numberart = '2034399002125581';
-//$stars = '*';
-//function getHiddenCard($numberart, $stars, $repeat = 4)
-//
-//{
-//    $str = с($numberart, -4, 4);
-//    $end = _default - parameters_exercise_unit . phpstr_repeat($stars, $repeat) . $str;
-//    return $end;
-//}
-//
-//$result = getHiddenCard($numberart, $stars);
-//print_r("$result");
-
-//function getHiddenCard($cardNumber, $numStars = 4)
-//{
-//    return str_repeat('*', 16 - $numStars) . substr($cardNumber, -4);
-//}
-//
-// echo getHiddenCard("1234567812345678", 2) . "\n";
-
+namespace App\Solution;
 
 function getHiddenCard($cardNumber, $numStars = 4)
 {
-    $result = str_repeat('*', 8 - $numStars) . substr($cardNumber, -4);
+    $hiddenPart = str_repeat('*', $numStars);
+    $lastDigits = substr($cardNumber, -4);
+    $result = $hiddenPart . $lastDigits;
     return $result;
 }
-
-echo getHiddenCard("1234567812345678");
+// по умолчанию работает 4 звезды из установленного параметра $numStars но если мы
+// ему скормим другую цифру, то количество звездочек изменить на ту, которую указали
+//echo getHiddenCard("1234567812345678", 8);
