@@ -6,6 +6,7 @@
 // $day = 6;
 // $mount = 5;
 // $year = 1987;
+namespace App\Solution;
 
 function getFormattedBirthday($day, $mount, $year)
 {

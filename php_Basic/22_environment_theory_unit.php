@@ -1,14 +1,18 @@
 <?php
+
 // const ONE = 998;
 // const TWO = 1966;
+
 // function getAgeDifference()
 // {
 //     $difference = ONE - TWO;
 //     $end = "The age difference is " . abs($difference);
 //     return $end;
 // }
+
 // // $result = getAgeDifference();
 // // print_r($result);
+namespace App\Solution;
 
 function getAgeDifference($one, $two)
 {
@@ -17,8 +21,8 @@ function getAgeDifference($one, $two)
     return $end;
 }
 
-$one = 998;
-$two = 1966;
+// $one = 998;
+// $two = 1966;
 
-$result = getAgeDifference($one, $two);
-print_r($result);
+// $result = getAgeDifference();
+// print_r($result);
