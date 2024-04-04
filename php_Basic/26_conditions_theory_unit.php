@@ -14,7 +14,7 @@ function convertText($str)
 //// Примеры использования
 //echo convertText('Hello') . "\n"; // 'Hello'
 //echo convertText('hello') . "\n"; // 'olleh'
-//
+
 //// Вариант с тернарным оператором
 //function convertText($str) {
 //    return (ctype_upper($str[0])) ? $str : strrev($str);
