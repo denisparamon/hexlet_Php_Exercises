@@ -4,14 +4,12 @@ namespace App\Solution;
 
 function printNumbers($firstNumber)
 {
-    $i = 3;
-    while ($i >= 0){
-        print_r($i);
-        print_r('\n');
-        $i = $i - 1;
+    $high_limit = $firstNumber;
+    $low_limit = 0;
+    $i = $high_limit;
+    while ($high_limit >= $low_limit) {
+        print_r($num . "\n");
+        $num--;
     }
     print_r('finished!');
 }
-
-printNumbers(3);
-// 3\n2\n1\n0\nfinished!
