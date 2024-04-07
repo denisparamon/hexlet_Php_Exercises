@@ -6,8 +6,8 @@ function printNumbers($firstNumber)
 {
     $high_limit = $firstNumber;
     $low_limit = 0;
-    $i = $high_limit;
-    while ($high_limit >= $low_limit) {
+    $num = $high_limit;
+    while ($num > $low_limit) {
         print_r($num . "\n");
         $num--;
     }
