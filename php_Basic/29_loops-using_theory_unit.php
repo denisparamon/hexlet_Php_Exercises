@@ -18,3 +18,18 @@ function joinNumbersFromRange($perv, $vtor)
 }
 
 joinNumbersFromRange(10, 100);
+
+//// BEGIN
+//function joinNumbersFromRange($begin, $end)
+//{
+//    $i = $begin;
+//    $result = '';
+//
+//    while ($i <= $end) {
+//        $result = "{$result}{$i}";
+//        $i = $i + 1;
+//    }
+//
+//    return $result;
+//}
+//// END
