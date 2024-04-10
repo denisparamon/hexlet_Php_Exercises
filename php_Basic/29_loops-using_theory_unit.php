@@ -17,8 +17,9 @@ function joinNumbersFromRange($perv, $vtor)
     return $result;
 }
 
-joinNumbersFromRange(10, 100);
+//joinNumbersFromRange(10, 100);
 
+////Решение из подсказки:
 //// BEGIN
 //function joinNumbersFromRange($begin, $end)
 //{
