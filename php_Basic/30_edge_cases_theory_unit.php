@@ -26,4 +26,4 @@ function isArgumentsForSubstrCorrect($str, $index, $length)
     return true;
 }
 
-//isArgumentsForSubstrCorrect('Sansa Stark', 0, 5);   // true
+//isArgumentsForSubstrCorrect('Sansa Stark', 0, 5);   //
