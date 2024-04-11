@@ -33,4 +33,4 @@ function invertCase($text)
 //         }
 //     }
 
-//     return $result;
+//     return $result
