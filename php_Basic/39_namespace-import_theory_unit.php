@@ -7,7 +7,7 @@ use function App\Symbols\isVowel;
 function countVowels($str)
 {
     $vowelCount = 0;
-    $length = strlen($str)
+    $length = strlen($str);
     for ($i = 0; $i < $length; $i++) {
         if (isVowel($str[$i])) {
             $vowelCount++;
