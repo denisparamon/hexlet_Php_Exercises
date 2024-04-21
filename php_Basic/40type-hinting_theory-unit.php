@@ -14,3 +14,10 @@ function reverse(int $number)
     }
     return $reversNumber;
 }
+
+//// Решение от Хекслет:
+// function reverse(int $num): int
+//{
+//    $reverse = (int) strrev((string) abs($num));
+//    return $num >= 0 ? $reverse : -$reverse;
+//}
