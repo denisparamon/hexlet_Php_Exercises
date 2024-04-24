@@ -13,7 +13,6 @@ function get(array $array, int $index, $defaultValue = null)
 
 ////Решение от Хекслет:
 //
-//// BEGIN
 //function get(array $arr, $index, $default = null)
 //{
 //    return array_key_exists($index, $arr) ? $arr[$index] : $default;
