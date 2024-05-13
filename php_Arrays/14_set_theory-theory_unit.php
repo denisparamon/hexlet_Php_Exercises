@@ -15,3 +15,17 @@ function countUniqChars(string $string)
     }
     return count($charCount);
 }
+
+////Решение хекслет
+//// BEGIN
+//function countUniqChars($text)
+//{
+//    $uniqChars = [];
+//    for ($i = 0; $i < strlen($text); $i++) {
+//        if (!in_array($text[$i], $uniqChars)) {
+//            $uniqChars[] = $text[$i];
+//        }
+//    }
+//    return count($uniqChars);
+//}
+//// END
