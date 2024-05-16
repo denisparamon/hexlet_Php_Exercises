@@ -1,1 +1,1 @@
-head /home/tirion/.bashrc
+head -n 6 /home/tirion/.bashrc
