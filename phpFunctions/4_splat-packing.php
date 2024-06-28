@@ -12,3 +12,4 @@ function average(...$numbers)
     $average = $sum / $count;
     return $average;
 }
+
