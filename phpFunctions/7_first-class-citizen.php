@@ -13,3 +13,4 @@ function run(string $text)
 
     return $last($text);
 }
+
