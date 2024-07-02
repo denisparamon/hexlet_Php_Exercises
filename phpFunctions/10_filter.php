@@ -38,3 +38,4 @@ function getGirlFriends(array $users): array
 //array_filter внутри array_reduce фильтрует друзей каждого пользователя по полу 'female'.
 //array_merge и array_values используются для добавления отфильтрованных подруг в общий массив.
 
+
