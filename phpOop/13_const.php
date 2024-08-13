@@ -7,10 +7,10 @@ class Timer
     public const SEC_PER_MIN = 60;
     public const SEC_PER_HOUR = 3600;
 
-    private $secondsCount;
+    private int $secondsCount;
 
     // Конструктор
-    public function __construct($seconds, $minutes = 0, $hours = 0)
+    public function __construct(int $seconds, int $minutes = 0, int $hours = 0)
     {
         // Подсчёт общего количества секунд
         $this->secondsCount = $seconds +
@@ -19,13 +19,13 @@ class Timer
     }
 
     // Метод для получения оставшихся секунд
-    public function getLeftSeconds()
+    public function getLeftSeconds(): int
     {
         return $this->secondsCount;
     }
 
     // Метод для уменьшения оставшихся секунд
-    public function tick()
+    public function tick(): void
     {
         if ($this->secondsCount > 0) {
             $this->secondsCount--;
