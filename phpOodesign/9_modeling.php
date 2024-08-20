@@ -12,7 +12,6 @@ class Url
     public function __construct(string $url)
     {
         $parsedUrl = parse_url($url);
-
         $this->scheme = $parsedUrl['scheme'];
         $this->host = $parsedUrl['host'];
         $this->port = $parsedUrl['port'] ?? ($this->scheme === 'https' ? 443 : 80);
