@@ -1,0 +1,25 @@
+.quote {
+    display: inline-block;
+    padding: 20px 30px;
+
+    /* BEGIN */
+    color: #404040;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    /* END */
+    border: 1px solid #bbb;
+    border-radius: 50px 0;
+}
+
+.quote-author {
+    display: block;
+
+    /* BEGIN */
+    font-weight: normal;
+    font-size: 16px;
+    text-align: right;
+
+    /* END */
+}
