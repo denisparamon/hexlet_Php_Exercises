@@ -1,0 +1,22 @@
+:root {
+    --transparent: transparent;
+    --purple: #9c27b0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    background:
+            repeating-linear-gradient(
+                    45deg,
+                    var(--transparent) 0,
+                    var(--transparent) 100px,
+                    var(--purple) 100px,
+                    var(--purple) 200px
+            );
+}
