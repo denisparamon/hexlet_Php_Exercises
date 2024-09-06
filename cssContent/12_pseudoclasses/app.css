@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    font: 18px/1.5 sans-serif;
+}
+
+.chessboard {
+    width: 500px;
+    height: 500px;
+
+    background: #b58763;
+
+    border-collapse: collapse;
+}
+
+.chessboard tr:nth-of-type(odd) td:nth-of-type(odd) {
+    background: #f1d9b5;
+}
+
+.chessboard tr:nth-of-type(even) td:nth-of-type(even) {
+    background: #f1d9b5;
+}
