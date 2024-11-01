@@ -8,7 +8,7 @@ function hello()
     return 'ns';
 }
 
-//Solution.php:
+//CourseDAO.php:
 
 namespace App\Solution;
 
