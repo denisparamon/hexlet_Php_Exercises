@@ -1,0 +1,21 @@
+<!-- templates/users/show.phtml -->
+<h1>Профиль пользователя</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <td><?= htmlspecialchars($user['id']) ?></td>
+    </tr>
+    <tr>
+        <th>Имя</th>
+        <td><?= htmlspecialchars($user['firstName']) ?></td>
+    </tr>
+    <tr>
+        <th>Фамилия</th>
+        <td><?= htmlspecialchars($user['lastName']) ?></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><?= htmlspecialchars($user['email']) ?></td>
+    </tr>
+</table>
+<a href="/users">Назад к списку пользователей</a>
