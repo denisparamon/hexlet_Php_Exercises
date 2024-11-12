@@ -1,5 +1,20 @@
-<a href="/users">Все Пользователи</a>
+<!-- templates/users/index.phtml -->
 
-<!-- BEGIN (write your solution here) -->
+<h1>Список пользователей</h1>
 
-<!-- END -->
+<!-- Форма для фильтрации -->
+<form method="get" action="/users">
+    <label for="term">Имя пользователя:</label>
+    <input type="text" id="term" name="term" value="<?= htmlspecialchars($term) ?>">
+    <button type="submit">Найти</button>
+</form>
+
+<?php if (!empty($users)): ?>
+    <ul>
+        <?php foreach ($users as $user): ?>
+            <li><?= htmlspecialchars($user['firstName']) ?> <?= htmlspecialchars($user['lastName']) ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p>Пользователи не найдены.</p>
+<?php endif; ?>

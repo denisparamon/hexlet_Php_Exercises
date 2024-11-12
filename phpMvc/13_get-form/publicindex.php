@@ -22,8 +22,21 @@ $app->get('/', function ($request, $response) {
     return $this->get('renderer')->render($response, 'index.phtml');
 });
 
-// BEGIN (write your solution here)
+// Реализация обработчика /users
+$app->get('/users', function ($request, $response) use ($users) {
+    // Получаем значение параметра term из запроса
+    $term = $request->getQueryParams()['term'] ?? '';
 
-// END
+    // Фильтруем пользователей по началу имени, если параметр term не пуст
+    $filteredUsers = array_filter($users, function ($user) use ($term) {
+        return empty($term) || stripos($user['firstName'], $term) === 0;
+    });
+
+    // Передаем отфильтрованный список пользователей и введенное значение term в шаблон
+    return $this->get('renderer')->render($response, 'users/index.phtml', [
+        'users' => $filteredUsers,
+        'term' => $term,
+    ]);
+});
 
 $app->run();
