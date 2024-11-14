@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Messages</title>
+</head>
+<body>
+
+<h1>Welcome to the Course Management</h1>
+
+<form action="/courses" method="post">
+    <input type="submit" value="Create Course">
+</form>
+
+<?php if (!empty($flashMessages)): ?>
+    <div class="flash-messages">
+        <?php foreach ($flashMessages as $key => $messages): ?>
+            <?php foreach ($messages as $message): ?>
+                <div class="flash-message <?= htmlspecialchars($key) ?>">
+                    <?= htmlspecialchars($message) ?>
+                </div>
+            <?php endforeach; ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+
+</body>
+</html>
