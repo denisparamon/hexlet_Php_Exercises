@@ -1,0 +1,2 @@
+solution
+Напишите регулярное выражение, которое находит строку, содержащую только support@hexlet.io. Такие строки, как something here support@hexlet.io и support@hexlet.io something here не попадают под регулярное выражение.
