@@ -11,16 +11,12 @@ class ArticleCategoryController extends Controller
         $articleCategories = ArticleCategory::all();
         return view('article_category.index', compact('articleCategories'));
     }
+
+    // BEGIN (write your solution here
+    public function show($id)
+{
+    $category = ArticleCategory::with('articles')->findOrFail($id);
+    return view('article_category.show', compact('category'));
 }
-
-
-//
- Чтобы создать файл в вебе в хекселе, нужно создать Файл двумя командами
- Перейти в нудную директорию:
-
-cd app/Http/Controllers/
-
- И создать файл:
-
-touch ArticleCategoryController.php
-//
+    // END
+}
