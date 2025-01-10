@@ -3,6 +3,7 @@
 
 name - имя тега.
 href или src - атрибуты. Атрибуты зависят от тега: img - src, a - href, link - href.
+```
 <?php
 
 use function App\HTML\getLinks;
@@ -18,3 +19,4 @@ $links = getLinks($tags);
 //     'hexlet.io/assets/logo.png',
 //     'hexlet.io/assets/style.css'
 // ];
+```
