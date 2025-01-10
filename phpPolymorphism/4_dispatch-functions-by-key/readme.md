@@ -2,6 +2,7 @@
 Реализуйте функцию stringify($tag), которая принимает на вход тег и возвращает его текстовое представление. Например:
 
 Примеры
+```
 <?php
 
 use function App\HTML\stringify;
@@ -14,6 +15,8 @@ $html = stringify($tag);
 $tag = ['name' => 'div', 'tagType' => 'pair', 'body' => 'text2', 'id' => 'wow'];
 $html = stringify($tag);
 // <div id="wow">text2</div>
+```
+
 Внутри структуры тега есть три специальных ключа:
 
 name - имя тега

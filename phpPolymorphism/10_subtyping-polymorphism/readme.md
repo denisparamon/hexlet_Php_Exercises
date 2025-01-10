@@ -2,12 +2,12 @@
 
 ## src/KeyValueStorageInterface.php
 Реализуйте интерфейс KeyValueStorageInterface, который расширяет интерфейс \Serializable и имеет следующие методы:
-
+```
 set($key, $value);
 get($key, $default = null);
 unset($key);
 toArray();
-
+```
 ## src/InMemoryKV.php
 Реализуйте в классе InMemoryKV интерфейс \Serializable, который встроен в PHP. Этот интерфейс позволяет применять к объектам методы serialize и unserialize.
 
