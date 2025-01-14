@@ -30,8 +30,4 @@ print_r($value);
 is_readable
 file_exists
 
-File.php:
-FileException.php:
-NotReadableException.php:
-NotExistsException.php:
 
